@@ -1,0 +1,2105 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      New Luck Enterprises | Bespoke Packaged Drinking Water Solutions
+    </title>
+    <meta
+      name="description"
+      content="Customized packaged drinking water bottles for luxury hotels, hospitals, fine-dining restaurants, caterers, ashrams, and prestigious corporate events. Based in Roorkee, Uttarakhand."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS with custom configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                50: "#FBF8EE",
+                100: "#F6EFCF",
+                200: "#ECDC9D",
+                300: "#E2C76A",
+                400: "#D5B03B",
+                500: "#C59A27",
+                600: "#A47B1B",
+                700: "#7E5B15",
+                800: "#583D10",
+                900: "#342308",
+              },
+              obsidian: "#070B12",
+              midnight: "#0D1322",
+              surfaceDark: "#121B2F",
+            },
+            fontFamily: {
+              serif: ["Cinzel", "serif"],
+              sans: ["Plus Jakarta Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .gold-glow {
+        box-shadow: 0 0 50px -10px rgba(212, 175, 55, 0.25);
+      }
+      .bottle-glass {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.25) 0%,
+          rgba(255, 255, 255, 0.05) 50%,
+          rgba(255, 255, 255, 0.15) 100%
+        );
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+      }
+      .dark .bottle-glass {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.12) 0%,
+          rgba(255, 255, 255, 0.02) 50%,
+          rgba(255, 255, 255, 0.08) 100%
+        );
+        border: 1px solid rgba(212, 175, 55, 0.2);
+      }
+      @keyframes shimmer {
+        0% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-3px) rotate(1deg);
+        }
+        100% {
+          transform: translateY(0) rotate(0deg);
+        }
+      }
+      .shimmer-bottle {
+        animation: shimmer 6s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-slate-50 text-slate-900 dark:bg-obsidian dark:text-slate-100 transition-colors duration-500 antialiased font-sans"
+  >
+    <!-- Navigation Bar -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-xl bg-white/80 dark:bg-obsidian/85 border-b border-slate-200/80 dark:border-gold-500/20"
+      id="mainNav"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
+      >
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center space-x-3 group">
+          <div
+            class="w-11 h-11 rounded-xl bg-gradient-to-br from-gold-400 via-gold-500 to-gold-700 flex items-center justify-center font-serif text-obsidian font-extrabold text-xl shadow-lg shadow-gold-500/20 group-hover:scale-105 transition-transform"
+          >
+            NLE
+          </div>
+          <div>
+            <span
+              class="font-serif text-lg sm:text-xl font-bold tracking-wider block text-slate-900 dark:text-white leading-tight"
+            >
+              NEW LUCK <span class="text-gold-500">ENTERPRISES</span>
+            </span>
+            <span
+              class="text-[10px] tracking-[0.2em] font-medium text-slate-500 dark:text-gold-300 uppercase block"
+            >
+              Custom Bottled Water • Roorkee
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div
+          class="hidden lg:flex items-center space-x-8 text-xs font-semibold uppercase tracking-widest text-slate-600 dark:text-slate-300"
+        >
+          <a
+            href="#about"
+            class="hover:text-gold-500 dark:hover:text-gold-400 transition-colors"
+            >Company</a
+          >
+          <a
+            href="#specifications"
+            class="hover:text-gold-500 dark:hover:text-gold-400 transition-colors"
+            >Specifications</a
+          >
+          <a
+            href="#portfolio"
+            class="hover:text-gold-500 dark:hover:text-gold-400 transition-colors"
+            >Bottle Showcase</a
+          >
+          <a
+            href="#sectors"
+            class="hover:text-gold-500 dark:hover:text-gold-400 transition-colors"
+            >Sectors</a
+          >
+          <a
+            href="#workflow"
+            class="hover:text-gold-500 dark:hover:text-gold-400 transition-colors"
+            >Process</a
+          >
+          <a
+            href="#calculator"
+            class="hover:text-gold-500 dark:hover:text-gold-400 transition-colors"
+            >Cost Estimator</a
+          >
+        </div>
+
+        <!-- Action Controls -->
+        <div class="flex items-center space-x-3 sm:space-x-4">
+          <!-- Theme Toggle Button -->
+          <button
+            id="themeToggleBtn"
+            type="button"
+            aria-label="Toggle Theme"
+            class="w-10 h-10 rounded-full flex items-center justify-center border border-slate-300 dark:border-gold-500/30 text-slate-700 dark:text-gold-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-all focus:outline-none"
+          >
+            <!-- Sun Icon (shown in dark mode) -->
+            <svg
+              id="sunIcon"
+              class="w-5 h-5 hidden"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+              />
+            </svg>
+            <!-- Moon Icon (shown in light mode) -->
+            <svg
+              id="moonIcon"
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              />
+            </svg>
+          </button>
+
+          <!-- Direct Phone Dial Button -->
+          <a
+            href="tel:+916395419708"
+            class="hidden sm:inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-obsidian font-bold px-4 py-2.5 rounded-full text-xs tracking-wider uppercase transition shadow-md shadow-gold-500/20"
+          >
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"
+              />
+            </svg>
+            <span>+91 63954 19708</span>
+          </a>
+
+          <a
+            href="#contact"
+            class="bg-slate-900 text-white dark:bg-white dark:text-obsidian px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider hover:opacity-90 transition"
+          >
+            Inquire Now
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-100 via-white to-slate-100 dark:from-obsidian dark:via-midnight dark:to-obsidian"
+    >
+      <div
+        class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-gold-500/10 dark:bg-gold-500/5 rounded-full blur-3xl pointer-events-none"
+      ></div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center"
+        >
+          <!-- Hero Left -->
+          <div class="lg:col-span-7 text-center lg:text-left">
+            <div
+              class="inline-flex items-center space-x-2 border border-gold-500/40 bg-gold-500/10 px-3.5 py-1.5 rounded-full text-xs font-semibold text-gold-600 dark:text-gold-400 tracking-wider uppercase mb-6"
+            >
+              <span
+                class="w-2 h-2 rounded-full bg-gold-500 animate-ping"
+              ></span>
+              <span>Proprietor: Udit Ranjan • Roorkee, Haridwar</span>
+            </div>
+
+            <h1
+              class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.15] text-slate-900 dark:text-white mb-6"
+            >
+              Your Brand On
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-gold-500 via-gold-400 to-amber-600"
+                >Every Table</span
+              >, In Every Room.
+            </h1>
+
+            <p
+              class="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed mb-8"
+            >
+              Elevate your hospitality identity. New Luck Enterprises crafts
+              customized, premium packaged drinking water bottles tailored for
+              five-star hotels, multi-specialty hospitals, luxury resorts,
+              banquet caterers, and prestigious events.
+            </p>
+
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
+            >
+              <a
+                href="#contact"
+                class="w-full sm:w-auto bg-gradient-to-r from-gold-500 via-gold-600 to-amber-600 text-obsidian font-bold text-sm tracking-wider uppercase px-8 py-4 rounded-xl shadow-lg shadow-gold-500/25 hover:shadow-gold-500/40 hover:-translate-y-0.5 transition-all text-center"
+              >
+                Request Custom Quote
+              </a>
+              <a
+                href="#portfolio"
+                class="w-full sm:w-auto border border-slate-300 dark:border-gold-500/30 text-slate-800 dark:text-gold-300 hover:bg-slate-200/50 dark:hover:bg-gold-500/10 font-semibold text-sm tracking-wider uppercase px-8 py-4 rounded-xl transition text-center"
+              >
+                View Brand Gallery
+              </a>
+            </div>
+
+            <div
+              class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800/80 grid grid-cols-3 gap-4 text-left"
+            >
+              <div>
+                <span
+                  class="font-serif text-2xl lg:text-3xl font-bold text-slate-900 dark:text-gold-400 block"
+                  >100%</span
+                >
+                <span
+                  class="text-xs text-slate-500 dark:text-slate-400 font-medium"
+                  >Safe &amp; Mineral Pure</span
+                >
+              </div>
+              <div>
+                <span
+                  class="font-serif text-2xl lg:text-3xl font-bold text-slate-900 dark:text-gold-400 block"
+                  >3 Sizes</span
+                >
+                <span
+                  class="text-xs text-slate-500 dark:text-slate-400 font-medium"
+                  >1000ml • 500ml • 250ml</span
+                >
+              </div>
+              <div>
+                <span
+                  class="font-serif text-2xl lg:text-3xl font-bold text-slate-900 dark:text-gold-400 block"
+                  >Square/Round</span
+                >
+                <span
+                  class="text-xs text-slate-500 dark:text-slate-400 font-medium"
+                  >High Preform Weight</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Right -->
+          <div class="lg:col-span-5 flex justify-center relative">
+            <div
+              class="relative w-full max-w-md p-8 rounded-3xl bg-white/70 dark:bg-midnight/70 backdrop-blur-2xl border border-slate-200 dark:border-gold-500/20 shadow-2xl gold-glow"
+            >
+              <div
+                class="absolute -top-3 right-6 bg-gold-500 text-obsidian text-[10px] font-extrabold tracking-widest uppercase px-3 py-1 rounded-full shadow"
+              >
+                Flagship Design
+              </div>
+
+              <div class="py-6 flex items-end justify-center gap-3 sm:gap-5">
+                <!-- 500ml Bottle -->
+                <div
+                  class="w-20 sm:w-24 h-56 rounded-xl bottle-glass relative flex flex-col justify-between p-2 shadow-xl border border-slate-300 dark:border-gold-500/40 shimmer-bottle"
+                  style="animation-delay: 1s"
+                >
+                  <div
+                    class="w-8 h-4 mx-auto bg-gradient-to-r from-gold-500 to-amber-700 rounded-t-sm shadow"
+                  ></div>
+                  <div
+                    class="bg-obsidian border border-gold-400/80 rounded-md p-1.5 text-center my-auto shadow-inner"
+                  >
+                    <span
+                      class="text-[9px] text-gold-300 font-serif font-bold block leading-tight"
+                      >STALION</span
+                    >
+                    <div class="w-4 h-0.5 bg-gold-500 mx-auto my-1"></div>
+                    <span
+                      class="text-[6px] text-slate-300 tracking-tighter block"
+                      >PURE • SAFE</span
+                    >
+                    <span class="text-[5px] text-gold-400 block">500 ml</span>
+                  </div>
+                  <div
+                    class="text-[8px] text-center font-bold text-slate-500 dark:text-gold-400/80"
+                  >
+                    15g Preform
+                  </div>
+                </div>
+
+                <!-- 1000ml Flagship Bottle -->
+                <div
+                  class="w-24 sm:w-32 h-72 rounded-2xl bottle-glass relative flex flex-col justify-between p-2.5 shadow-2xl border-2 border-gold-500/60 shimmer-bottle"
+                >
+                  <div
+                    class="w-10 h-5 mx-auto bg-gradient-to-r from-gold-400 via-gold-500 to-amber-700 rounded-t shadow-md"
+                  ></div>
+                  <div
+                    class="bg-obsidian border-2 border-gold-400 rounded-lg p-2 text-center my-auto shadow-2xl"
+                  >
+                    <div class="text-gold-400 text-xs mb-0.5">♚</div>
+                    <span
+                      class="text-[11px] text-gold-300 font-serif font-extrabold block tracking-wider"
+                      >HOTEL STALION</span
+                    >
+                    <div class="w-8 h-0.5 bg-gold-400 mx-auto my-1"></div>
+                    <span
+                      class="text-[7px] text-slate-200 tracking-widest block font-medium"
+                      >PACKAGED DRINKING WATER</span
+                    >
+                    <span
+                      class="text-[6px] text-gold-300/80 uppercase block mt-1"
+                      >1000 ml • Premium</span
+                    >
+                  </div>
+                  <div
+                    class="text-[9px] text-center font-bold text-gold-600 dark:text-gold-400"
+                  >
+                    21g Square Bottle
+                  </div>
+                </div>
+
+                <!-- 250ml Boutique Bottle -->
+                <div
+                  class="w-16 sm:w-20 h-44 rounded-xl bottle-glass relative flex flex-col justify-between p-2 shadow-lg border border-slate-300 dark:border-gold-500/40 shimmer-bottle"
+                  style="animation-delay: 2s"
+                >
+                  <div
+                    class="w-6 h-3 mx-auto bg-gradient-to-r from-gold-500 to-amber-700 rounded-t-sm shadow"
+                  ></div>
+                  <div
+                    class="bg-obsidian border border-gold-400/80 rounded-md p-1 text-center my-auto"
+                  >
+                    <span
+                      class="text-[8px] text-gold-300 font-serif font-bold block leading-tight"
+                      >STALION</span
+                    >
+                    <span class="text-[5px] text-slate-300 block mt-0.5"
+                      >250 ml</span
+                    >
+                  </div>
+                  <div
+                    class="text-[7px] text-center font-bold text-slate-500 dark:text-gold-400/80"
+                  >
+                    10g Compact
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="text-center pt-4 border-t border-slate-200 dark:border-slate-800"
+              >
+                <span
+                  class="text-xs font-semibold text-slate-700 dark:text-slate-300 block"
+                  >Classic Luxury Concept (Black &amp; Gold Edition)</span
+                >
+                <span class="text-[11px] text-slate-500 dark:text-slate-400"
+                  >Supplied by New Luck Enterprises • Haridwar Division</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Profile Section -->
+    <section
+      id="about"
+      class="py-24 bg-white dark:bg-midnight/60 border-t border-b border-slate-200 dark:border-slate-800/80"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span
+            class="text-xs font-bold text-gold-600 dark:text-gold-400 tracking-widest uppercase block mb-3"
+            >01 | Corporate Profile</span
+          >
+          <h2
+            class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white"
+          >
+            Crafting Distinction for Uttarakhand &amp; Beyond
+          </h2>
+          <p
+            class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base"
+          >
+            Founded on 25 December 2025 by proprietor Udit Ranjan, New Luck
+            Enterprises has transformed how venues perceive drinking water. We
+            turn ordinary utility into an active statement of luxury, hygiene,
+            and hospitality excellence.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="p-8 rounded-2xl bg-slate-50 dark:bg-surfaceDark/80 border border-slate-200 dark:border-gold-500/20 shadow-sm hover:border-gold-500/50 transition duration-300"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400 mb-6 font-serif font-bold text-xl border border-gold-500/20"
+            >
+              01
+            </div>
+            <h3
+              class="font-serif text-xl font-bold text-slate-900 dark:text-white mb-3"
+            >
+              Custom Formulation &amp; Packaging
+            </h3>
+            <p
+              class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed"
+            >
+              Personalized bottle shapes, custom colored caps, high-clarity
+              preforms, and custom multi-bottle secondary cartons engineered to
+              your venue’s supply chain.
+            </p>
+          </div>
+
+          <div
+            class="p-8 rounded-2xl bg-slate-50 dark:bg-surfaceDark/80 border border-slate-200 dark:border-gold-500/20 shadow-sm hover:border-gold-500/50 transition duration-300"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400 mb-6 font-serif font-bold text-xl border border-gold-500/20"
+            >
+              02
+            </div>
+            <h3
+              class="font-serif text-xl font-bold text-slate-900 dark:text-white mb-3"
+            >
+              High-Definition Label Graphics
+            </h3>
+            <p
+              class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed"
+            >
+              Foil stamping, rich matte/gloss finishes, water-resistant
+              synthetic adhesive labels, and meticulous translation of your
+              brand book into miniature physical art.
+            </p>
+          </div>
+
+          <div
+            class="p-8 rounded-2xl bg-slate-50 dark:bg-surfaceDark/80 border border-slate-200 dark:border-gold-500/20 shadow-sm hover:border-gold-500/50 transition duration-300"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 dark:text-gold-400 mb-6 font-serif font-bold text-xl border border-gold-500/20"
+            >
+              03
+            </div>
+            <h3
+              class="font-serif text-xl font-bold text-slate-900 dark:text-white mb-3"
+            >
+              Institutional Reliability
+            </h3>
+            <p
+              class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed"
+            >
+              Conveniently headquartered in Awas Vikas Colony, Roorkee,
+              providing reliable batch delivery schedules across Haridwar,
+              Dehradun, Rishikesh, and the NCR corridor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specifications" class="py-24 bg-slate-100 dark:bg-obsidian">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span
+            class="text-xs font-bold text-gold-600 dark:text-gold-400 tracking-widest uppercase block mb-3"
+            >02 | Product Range &amp; Geometry</span
+          >
+          <h2
+            class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white"
+          >
+            Engineered Dimensions for Every Setting
+          </h2>
+          <p
+            class="mt-4 text-slate-600 dark:text-slate-300 text-sm sm:text-base"
+          >
+            Compare technical specifications reproduced from our official
+            production portfolio. Each size is calibrated for optimal grip,
+            structural firmness, and brand visibility.
+          </p>
+        </div>
+
+        <div
+          class="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-surfaceDark"
+        >
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr
+                class="border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/80 text-xs uppercase tracking-wider text-slate-700 dark:text-gold-400"
+              >
+                <th class="p-5">Bottle Volume</th>
+                <th class="p-5">Preform Gramage</th>
+                <th class="p-5">Available Shapes</th>
+                <th class="p-5">Primary Hospitality Placement</th>
+                <th class="p-5">Cap Color Choices</th>
+              </tr>
+            </thead>
+            <tbody
+              class="divide-y divide-slate-100 dark:divide-slate-800/80 text-sm"
+            >
+              <tr
+                class="hover:bg-slate-50/80 dark:hover:bg-slate-800/40 transition"
+              >
+                <td
+                  class="p-5 font-bold font-serif text-base text-slate-900 dark:text-white"
+                >
+                  1000 ml (1.0 L)
+                </td>
+                <td class="p-5 font-mono text-gold-600 dark:text-gold-300">
+                  21 Grams
+                </td>
+                <td class="p-5">
+                  <span
+                    class="inline-block bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-300 text-xs px-2.5 py-1 rounded mr-1"
+                    >Round</span
+                  >
+                  <span
+                    class="inline-block bg-amber-500/10 text-amber-700 dark:text-amber-400 text-xs px-2.5 py-1 rounded"
+                    >Square (Sharp)</span
+                  >
+                </td>
+                <td class="p-5 text-slate-600 dark:text-slate-300">
+                  In-Room Guest Nightstands, Presidential Suites, Fine-Dining
+                  Centerpieces
+                </td>
+                <td class="p-5 text-xs text-slate-500 dark:text-slate-400">
+                  Jet Black, Matte Gold, Emerald, Azure, Clear
+                </td>
+              </tr>
+              <tr
+                class="hover:bg-slate-50/80 dark:hover:bg-slate-800/40 transition"
+              >
+                <td
+                  class="p-5 font-bold font-serif text-base text-slate-900 dark:text-white"
+                >
+                  500 ml (0.5 L)
+                </td>
+                <td class="p-5 font-mono text-gold-600 dark:text-gold-300">
+                  15 Grams
+                </td>
+                <td class="p-5">
+                  <span
+                    class="inline-block bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-300 text-xs px-2.5 py-1 rounded mr-1"
+                    >Round</span
+                  >
+                  <span
+                    class="inline-block bg-amber-500/10 text-amber-700 dark:text-amber-400 text-xs px-2.5 py-1 rounded"
+                    >Square (Sharp)</span
+                  >
+                </td>
+                <td class="p-5 text-slate-600 dark:text-slate-300">
+                  Boardrooms, Seminars, Table covers, VIP Vehicle Fleets,
+                  Banquets
+                </td>
+                <td class="p-5 text-xs text-slate-500 dark:text-slate-400">
+                  Customized to Match Venue Brand Palette
+                </td>
+              </tr>
+              <tr
+                class="hover:bg-slate-50/80 dark:hover:bg-slate-800/40 transition"
+              >
+                <td
+                  class="p-5 font-bold font-serif text-base text-slate-900 dark:text-white"
+                >
+                  250 ml (0.25 L)
+                </td>
+                <td class="p-5 font-mono text-gold-600 dark:text-gold-300">
+                  10 Grams
+                </td>
+                <td class="p-5">
+                  <span
+                    class="inline-block bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-300 text-xs px-2.5 py-1 rounded mr-1"
+                    >Round</span
+                  >
+                  <span
+                    class="inline-block bg-amber-500/10 text-amber-700 dark:text-amber-400 text-xs px-2.5 py-1 rounded"
+                    >Square (Sharp)</span
+                  >
+                </td>
+                <td class="p-5 text-slate-600 dark:text-slate-300">
+                  Auditorium Conferences, Wedding Welcome Platters, Patient
+                  Concierge
+                </td>
+                <td class="p-5 text-xs text-slate-500 dark:text-slate-400">
+                  Black, Vibrant Orange, Leaf Green, Pearl White
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+          <div
+            class="p-6 rounded-2xl bg-white dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 flex items-start space-x-4"
+          >
+            <div
+              class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-gold-500 flex-shrink-0 font-bold"
+            >
+              ○
+            </div>
+            <div>
+              <h4
+                class="font-serif font-bold text-slate-900 dark:text-white text-base mb-1"
+              >
+                Round Shape Format
+              </h4>
+              <p class="text-sm text-slate-600 dark:text-slate-400">
+                The timeless, ergonomically familiar format favored for
+                fast-paced dining, catering service, and high-volume corporate
+                gatherings.
+              </p>
+            </div>
+          </div>
+          <div
+            class="p-6 rounded-2xl bg-white dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 flex items-start space-x-4"
+          >
+            <div
+              class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-gold-500 flex-shrink-0 font-bold"
+            >
+              □
+            </div>
+            <div>
+              <h4
+                class="font-serif font-bold text-slate-900 dark:text-white text-base mb-1"
+              >
+                Square Silhouette Format
+              </h4>
+              <p class="text-sm text-slate-600 dark:text-slate-400">
+                Crisp, distinct edges designed to mimic luxury perfumery
+                aesthetics. Creates an immediate high-end focal point on bedside
+                tables and restaurant tables.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Portfolio Showcase -->
+    <section
+      id="portfolio"
+      class="py-24 bg-white dark:bg-midnight/70 border-t border-slate-200 dark:border-slate-800/80"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <span
+            class="text-xs font-bold text-gold-600 dark:text-gold-400 tracking-widest uppercase block mb-3"
+            >03 | Design Portfolio</span
+          >
+          <h2
+            class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white"
+          >
+            Realized Custom Bottle Concepts
+          </h2>
+          <p
+            class="mt-4 text-slate-600 dark:text-slate-300 text-sm sm:text-base"
+          >
+            Every property has its own distinctive story. Review our six
+            realized brand directions illustrating how diverse hotel, spiritual,
+            and resort aesthetics are translated into bespoke packaging.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center gap-2 mt-8">
+            <button
+              class="portfolio-filter-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition bg-gold-500 text-obsidian"
+              data-category="all"
+            >
+              All Styles
+            </button>
+            <button
+              class="portfolio-filter-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
+              data-category="luxury"
+            >
+              Classic Luxury
+            </button>
+            <button
+              class="portfolio-filter-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
+              data-category="nature"
+            >
+              Nature &amp; Wellness
+            </button>
+            <button
+              class="portfolio-filter-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
+              data-category="heritage"
+            >
+              Heritage &amp; Spiritual
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          id="portfolioContainer"
+        >
+          <!-- Concept 1: Hotel Stalion -->
+          <div
+            class="portfolio-item luxury group rounded-2xl overflow-hidden bg-slate-50 dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 hover:border-gold-500/60 transition-all duration-300 shadow-md"
+          >
+            <div
+              class="h-64 bg-gradient-to-b from-slate-900 via-obsidian to-slate-950 p-6 flex flex-col justify-center items-center relative overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 opacity-10 bg-[radial-gradient(#e5c07b_1px,transparent_1px)] [background-size:16px_16px]"
+              ></div>
+
+              <!-- INSERTED IMAGE -->
+              <img
+                src="images/hotel-stalion.png"
+                alt="Hotel Stalion Custom Water Bottle"
+                class="max-h-60 max-w-full object-contain relative z-10 drop-shadow-2xl group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <span
+                  class="text-xs font-bold text-gold-600 dark:text-gold-400 uppercase tracking-wider"
+                  >Concept 01</span
+                >
+                <span
+                  class="text-[11px] bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded"
+                  >Square Bottle</span
+                >
+              </div>
+              <h3
+                class="font-serif text-xl font-bold text-slate-900 dark:text-white mb-2"
+              >
+                Hotel Stalion
+              </h3>
+              <p
+                class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4"
+              >
+                Sleek black &amp; gold contrast label with a gilded stallion
+                crest. Engineered for high-end boutique properties, VIP
+                executive suites, and cocktail lounges.
+              </p>
+              <div
+                class="flex items-center text-xs font-semibold text-slate-500 dark:text-slate-400 space-x-3"
+              >
+                <span>• Gramage: 21g</span>
+                <span>• Sizes: 1L, 500ml, 250ml</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Concept 2: Hotel Jasmine -->
+          <div
+            class="portfolio-item nature group rounded-2xl overflow-hidden bg-slate-50 dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 hover:border-emerald-500/60 transition-all duration-300 shadow-md"
+          >
+            <div
+              class="h-64 bg-gradient-to-b from-emerald-950/40 via-obsidian to-slate-950 p-6 flex flex-col justify-center items-center relative overflow-hidden"
+            >
+              <!-- INSERTED IMAGE -->
+              <img
+                src="images/hotel-jasmine.jpeg"
+                alt="Hotel Jasmine Custom Water Bottle"
+                class="max-h-60 max-w-full object-contain relative z-10 drop-shadow-2xl group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <span
+                  class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider"
+                  >Concept 02</span
+                >
+                <span
+                  class="text-[11px] bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded"
+                  >Floral Square</span
+                >
+              </div>
+              <h3
+                class="font-serif text-xl font-bold text-slate-900 dark:text-white mb-2"
+              >
+                Hotel Jasmine
+              </h3>
+              <p
+                class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4"
+              >
+                Infused with botanical grace and emerald flourish. Built for
+                luxury wellness retreats, spa resorts, and aesthetic fine-dining
+                destinations.
+              </p>
+              <div
+                class="flex items-center text-xs font-semibold text-slate-500 dark:text-slate-400 space-x-3"
+              >
+                <span>• Gramage: 23g (Heavy)</span>[cite: 1, 2]
+                <span>• Sizes: 1L, 500ml, 250ml</span>[cite: 1, 2]
+              </div>
+            </div>
+          </div>
+
+          <!-- Concept 3: Hotel JSR Residency -->
+          <div
+            class="portfolio-item luxury group rounded-2xl overflow-hidden bg-slate-50 dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 hover:border-gold-500/60 transition-all duration-300 shadow-md"
+          >
+            <div
+              class="h-64 bg-gradient-to-b from-amber-950/40 via-obsidian to-slate-950 p-6 flex flex-col justify-center items-center relative overflow-hidden"
+            >
+              <!-- INSERTED IMAGE -->
+              <img
+                src="images/hotel-jsr-residency.jpeg"
+                alt="Hotel JSR Residency Custom Water Bottle"
+                class="max-h-56 max-w-full object-contain relative z-10 drop-shadow-2xl group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <span
+                  class="text-xs font-bold text-amber-600 dark:text-gold-400 uppercase tracking-wider"
+                  >Concept 03</span
+                >
+                <span
+                  class="text-[11px] bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded"
+                  >Prestige Square</span
+                >
+              </div>
+              <h3
+                class="font-serif text-xl font-bold text-slate-900 dark:text-white mb-2"
+              >
+                Hotel JSR Residency
+              </h3>
+              <p
+                class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4"
+              >
+                Regal gold mountain silhouette with royal crown insignia[cite:
+                1, 2]. Designed for grand heritage hotels, diplomatic delegates,
+                and formal banquet tables.
+              </p>
+              <div
+                class="flex items-center text-xs font-semibold text-slate-500 dark:text-slate-400 space-x-3"
+              >
+                <span>• Gramage: 23g</span>[cite: 1, 2]
+                <span>• Sizes: 1L, 500ml, 250ml</span>[cite: 1, 2]
+              </div>
+            </div>
+          </div>
+
+          <!-- Concept 4: Hotel Green -->
+          <div
+            class="portfolio-item nature group rounded-2xl overflow-hidden bg-slate-50 dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 hover:border-green-500/60 transition-all duration-300 shadow-md"
+          >
+            <div
+              class="h-64 bg-gradient-to-b from-green-950/40 via-obsidian to-slate-950 p-6 flex flex-col justify-center items-center relative overflow-hidden"
+            >
+              <div
+                class="w-24 h-48 rounded-xl bottle-glass border border-green-500/40 p-2 flex flex-col justify-between shadow-2xl relative z-10 group-hover:scale-105 transition-transform"
+              >
+                <div
+                  class="w-8 h-4 mx-auto bg-green-700 rounded-t shadow"
+                ></div>
+                <div
+                  class="bg-white/95 dark:bg-black/90 border border-green-500 rounded p-1.5 text-center"
+                >
+                  <div class="text-[10px] text-green-600">⛰</div>
+                  <span
+                    class="text-[9px] font-serif font-bold text-green-700 dark:text-green-400 block"
+                    >HOTEL GREEN</span
+                  >
+                  <span
+                    class="text-[6px] text-slate-600 dark:text-slate-300 block"
+                    >STAY • RELAX • REJUVENATE</span
+                  >
+                </div>
+                <span class="text-[7px] font-mono text-center text-green-500"
+                  >Pure By Nature</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <span
+                  class="text-xs font-bold text-green-600 dark:text-green-400 uppercase tracking-wider"
+                  >Concept 04</span
+                >
+                <span
+                  class="text-[11px] bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded"
+                  >Alpine Profile</span
+                >
+              </div>
+              <h3
+                class="font-serif text-xl font-bold text-slate-900 dark:text-white mb-2"
+              >
+                Hotel Green
+              </h3>
+              <p
+                class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4"
+              >
+                Alpine lake vistas and lush green leaves. Tailored for Himalayan
+                eco-resorts, wildlife lodges, hill-station sanctuaries, and
+                wellness clubs.
+              </p>
+              <div
+                class="flex items-center text-xs font-semibold text-slate-500 dark:text-slate-400 space-x-3"
+              >
+                <span>• Gramage: 15g-21g</span>
+                <span>• Sizes: 1L, 500ml, 250ml</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Concept 5: Hotel City Heritage -->
+          <div
+            class="portfolio-item heritage group rounded-2xl overflow-hidden bg-slate-50 dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 hover:border-sky-500/60 transition-all duration-300 shadow-md"
+          >
+            <div
+              class="h-64 bg-gradient-to-b from-sky-950/40 via-obsidian to-slate-950 p-6 flex flex-col justify-center items-center relative overflow-hidden"
+            >
+              <div
+                class="w-24 h-48 rounded-xl bottle-glass border border-sky-400/40 p-2 flex flex-col justify-between shadow-2xl relative z-10 group-hover:scale-105 transition-transform"
+              >
+                <div class="w-8 h-4 mx-auto bg-sky-700 rounded-t shadow"></div>
+                <div
+                  class="bg-white/95 dark:bg-black/90 border border-sky-400 rounded p-1.5 text-center"
+                >
+                  <div class="text-[10px] text-sky-600">🏛</div>
+                  <span
+                    class="text-[8px] font-serif font-bold text-sky-700 dark:text-sky-300 block"
+                    >CITY HERITAGE</span
+                  >
+                  <span
+                    class="text-[6px] text-slate-600 dark:text-slate-300 block"
+                    >PURITY IN EVERY DROP</span
+                  >
+                </div>
+                <span class="text-[7px] font-mono text-center text-sky-400"
+                  >Rich in Minerals</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <span
+                  class="text-xs font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider"
+                  >Concept 05</span
+                >
+                <span
+                  class="text-[11px] bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded"
+                  >Heritage Format</span
+                >
+              </div>
+              <h3
+                class="font-serif text-xl font-bold text-slate-900 dark:text-white mb-2"
+              >
+                Hotel City Heritage
+              </h3>
+              <p
+                class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4"
+              >
+                Panoramic palace lakeside artwork with gold filigree framing.
+                Crafted for heritage fort hotels, destination wedding manors,
+                and historic properties.
+              </p>
+              <div
+                class="flex items-center text-xs font-semibold text-slate-500 dark:text-slate-400 space-x-3"
+              >
+                <span>• Gramage: 21g</span>
+                <span>• Sizes: 1L, 500ml, 250ml</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Concept 6: Siya Ram -->
+          <div
+            class="portfolio-item heritage group rounded-2xl overflow-hidden bg-slate-50 dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 hover:border-amber-500/60 transition-all duration-300 shadow-md"
+          >
+            <div
+              class="h-64 bg-gradient-to-b from-orange-950/40 via-obsidian to-slate-950 p-6 flex flex-col justify-center items-center relative overflow-hidden"
+            >
+              <div
+                class="w-24 h-48 rounded-xl bottle-glass border border-orange-500/40 p-2 flex flex-col justify-between shadow-2xl relative z-10 group-hover:scale-105 transition-transform"
+              >
+                <div
+                  class="w-8 h-4 mx-auto bg-orange-600 rounded-t shadow"
+                ></div>
+                <div
+                  class="bg-white/95 dark:bg-black/90 border border-orange-500 rounded p-1.5 text-center"
+                >
+                  <div class="text-[10px] text-orange-600">🕉</div>
+                  <span
+                    class="text-[9px] font-serif font-bold text-orange-600 dark:text-orange-400 block"
+                    >SIYA RAM</span
+                  >
+                  <span
+                    class="text-[6px] text-slate-600 dark:text-slate-300 block"
+                    >PURE JAL • SHUDDH JEEVAN</span
+                  >
+                </div>
+                <span class="text-[7px] font-mono text-center text-orange-500"
+                  >Hygienically Packed</span
+                >
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <span
+                  class="text-xs font-bold text-orange-600 dark:text-orange-400 uppercase tracking-wider"
+                  >Concept 06</span
+                >
+                <span
+                  class="text-[11px] bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2 py-0.5 rounded"
+                  >Spiritual Series</span
+                >
+              </div>
+              <h3
+                class="font-serif text-xl font-bold text-slate-900 dark:text-white mb-2"
+              >
+                Siya Ram Pure Jal
+              </h3>
+              <p
+                class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4"
+              >
+                Ghat riverfront sunrise visuals celebrating divine cleanliness.
+                Specially designed for ashrams, spiritual retreats, and
+                pilgrimage hospitality across Haridwar &amp; Rishikesh.
+              </p>
+              <div
+                class="flex items-center text-xs font-semibold text-slate-500 dark:text-slate-400 space-x-3"
+              >
+                <span>• Gramage: 10g-21g</span>
+                <span>• Sizes: 1L, 500ml, 250ml</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Target Sectors Section -->
+    <section id="sectors" class="py-24 bg-slate-100 dark:bg-obsidian">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span
+            class="text-xs font-bold text-gold-600 dark:text-gold-400 tracking-widest uppercase block mb-3"
+            >04 | Target Sectors</span
+          >
+          <h2
+            class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white"
+          >
+            Where New Luck Water Makes A Statement
+          </h2>
+          <p
+            class="mt-4 text-slate-600 dark:text-slate-300 text-sm sm:text-base"
+          >
+            No matter your operational scale, placing your own custom bottled
+            water immediately signals elevated hygiene, professionalism, and
+            care.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="p-8 rounded-2xl bg-white dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 shadow-sm hover:border-gold-500/40 transition"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-500 mb-4 text-lg"
+            >
+              🏨
+            </div>
+            <h3
+              class="font-serif text-lg font-bold text-slate-900 dark:text-white mb-2"
+            >
+              Hotels &amp; Resorts
+            </h3>
+            <p
+              class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+            >
+              Turn guest rooms, in-room dining trays, poolside cabanas, and
+              concierge services into branded hospitality moments.
+            </p>
+          </div>
+
+          <div
+            class="p-8 rounded-2xl bg-white dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 shadow-sm hover:border-gold-500/40 transition"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-500 mb-4 text-lg"
+            >
+              🏥
+            </div>
+            <h3
+              class="font-serif text-lg font-bold text-slate-900 dark:text-white mb-2"
+            >
+              Hospitals &amp; Healthcare
+            </h3>
+            <p
+              class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+            >
+              Instill confidence and reassurance for patients, VIP rooms,
+              diagnostic clinics, and corporate visitor suites.
+            </p>
+          </div>
+
+          <div
+            class="p-8 rounded-2xl bg-white dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 shadow-sm hover:border-gold-500/40 transition"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-500 mb-4 text-lg"
+            >
+              🕉️
+            </div>
+            <h3
+              class="font-serif text-lg font-bold text-slate-900 dark:text-white mb-2"
+            >
+              Ashrams &amp; Spiritual Centers
+            </h3>
+            <p
+              class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+            >
+              Reverent, sacred bottle presentations ideal for satsang halls,
+              spiritual gatherings, dharamshalas, and yatra groups.
+            </p>
+          </div>
+
+          <div
+            class="p-8 rounded-2xl bg-white dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 shadow-sm hover:border-gold-500/40 transition"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-500 mb-4 text-lg"
+            >
+              🍽️
+            </div>
+            <h3
+              class="font-serif text-lg font-bold text-slate-900 dark:text-white mb-2"
+            >
+              Fine-Dining &amp; Lounges
+            </h3>
+            <p
+              class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+            >
+              Stop offering generic water bottles. Align your dining tables with
+              bespoke labels complementing your culinary decor.
+            </p>
+          </div>
+
+          <div
+            class="p-8 rounded-2xl bg-white dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 shadow-sm hover:border-gold-500/40 transition"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-500 mb-4 text-lg"
+            >
+              💍
+            </div>
+            <h3
+              class="font-serif text-lg font-bold text-slate-900 dark:text-white mb-2"
+            >
+              Caterers &amp; Elite Weddings
+            </h3>
+            <p
+              class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+            >
+              Provide bride-and-groom monogrammed 250ml or 500ml water bottles
+              as welcome gifts and dining table essentials.
+            </p>
+          </div>
+
+          <div
+            class="p-8 rounded-2xl bg-white dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 shadow-sm hover:border-gold-500/40 transition"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-500 mb-4 text-lg"
+            >
+              🏛️
+            </div>
+            <h3
+              class="font-serif text-lg font-bold text-slate-900 dark:text-white mb-2"
+            >
+              Corporate &amp; Institutions
+            </h3>
+            <p
+              class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+            >
+              Executive summits, university convocations, corporate
+              headquarters, and high-impact boardroom meetings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Workflow Section -->
+    <section
+      id="workflow"
+      class="py-24 bg-white dark:bg-midnight/70 border-t border-slate-200 dark:border-slate-800/80"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span
+            class="text-xs font-bold text-gold-600 dark:text-gold-400 tracking-widest uppercase block mb-3"
+            >05 | Seamless Process</span
+          >
+          <h2
+            class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white"
+          >
+            Our 5-Step Customization Workflow
+          </h2>
+          <p
+            class="mt-4 text-slate-600 dark:text-slate-300 text-sm sm:text-base"
+          >
+            From your initial idea to full pallet dispatch, we make
+            private-label water procurement simple and efficient.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 relative">
+          <div
+            class="p-6 rounded-2xl bg-slate-50 dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 relative"
+          >
+            <div
+              class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-600 dark:text-gold-400 font-bold flex items-center justify-center mb-4 text-sm"
+            >
+              1
+            </div>
+            <h3
+              class="font-serif font-bold text-slate-900 dark:text-white text-base mb-2"
+            >
+              Brand Brief
+            </h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400">
+              Share logo files, color palette, tagline, and intended venue use
+              with our design studio.
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-2xl bg-slate-50 dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 relative"
+          >
+            <div
+              class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-600 dark:text-gold-400 font-bold flex items-center justify-center mb-4 text-sm"
+            >
+              2
+            </div>
+            <h3
+              class="font-serif font-bold text-slate-900 dark:text-white text-base mb-2"
+            >
+              Design Proof
+            </h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400">
+              We produce 2D and 3D digital label proofs mapped to your bottle
+              silhouette for approval.
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-2xl bg-slate-50 dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 relative"
+          >
+            <div
+              class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-600 dark:text-gold-400 font-bold flex items-center justify-center mb-4 text-sm"
+            >
+              3
+            </div>
+            <h3
+              class="font-serif font-bold text-slate-900 dark:text-white text-base mb-2"
+            >
+              Bottle Selection
+            </h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400">
+              Select 1000ml, 500ml, or 250ml capacity in either contemporary
+              Square or classic Round shape.
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-2xl bg-slate-50 dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 relative"
+          >
+            <div
+              class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-600 dark:text-gold-400 font-bold flex items-center justify-center mb-4 text-sm"
+            >
+              4
+            </div>
+            <h3
+              class="font-serif font-bold text-slate-900 dark:text-white text-base mb-2"
+            >
+              Sign-Off
+            </h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400">
+              Final verification of label print geometry, cap color accents, and
+              secondary carton specs.
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-2xl bg-slate-50 dark:bg-surfaceDark border border-slate-200 dark:border-slate-800 relative"
+          >
+            <div
+              class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-600 dark:text-gold-400 font-bold flex items-center justify-center mb-4 text-sm"
+            >
+              5
+            </div>
+            <h3
+              class="font-serif font-bold text-slate-900 dark:text-white text-base mb-2"
+            >
+              Production
+            </h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400">
+              Hygienic bottling, mineral filtration, quality checks, and
+              scheduled dispatch from Roorkee.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planning & Calculator Section -->
+    <section
+      id="calculator"
+      class="py-24 bg-slate-100 dark:bg-obsidian border-t border-slate-200 dark:border-slate-800"
+    >
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="bg-white dark:bg-surfaceDark rounded-3xl p-8 sm:p-12 border border-slate-200 dark:border-gold-500/20 shadow-2xl"
+        >
+          <div class="text-center mb-10">
+            <span
+              class="text-xs font-bold text-gold-600 dark:text-gold-400 tracking-widest uppercase block mb-2"
+              >Instant Planning Tool</span
+            >
+            <h2
+              class="font-serif text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white"
+            >
+              Estimate Your Monthly Water Requirements
+            </h2>
+            <p
+              class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2"
+            >
+              Adjust your parameters below to generate an estimated quantity
+              quote for your venue.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+            <div>
+              <label
+                class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2"
+                >Property / Venue Category</label
+              >
+              <select
+                id="calcVenue"
+                class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500 text-slate-900 dark:text-white"
+              >
+                <option value="hotel">
+                  Luxury Hotel / Resort (Rooms &amp; Dining)
+                </option>
+                <option value="restaurant">
+                  Fine-Dining Restaurant / Lounge
+                </option>
+                <option value="hospital">Hospital / Medical Center</option>
+                <option value="event">Wedding / Corporate Event / Gala</option>
+              </select>
+            </div>
+
+            <div>
+              <label
+                class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2"
+                >Preferred Bottle Size</label
+              >
+              <select
+                id="calcSize"
+                class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500 text-slate-900 dark:text-white"
+              >
+                <option value="1000">
+                  1000 ml (Executive Bedside &amp; Dining)
+                </option>
+                <option value="500" selected>
+                  500 ml (Meetings &amp; Covers)
+                </option>
+                <option value="250">
+                  250 ml (Welcome Platters &amp; Conferences)
+                </option>
+                <option value="mixed">Mixed Assortment Package</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-8">
+            <div class="flex justify-between items-center mb-2">
+              <label
+                class="text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider"
+                >Estimated Monthly Volume (Bottles)</label
+              >
+              <span
+                id="sliderValueDisplay"
+                class="font-mono text-gold-600 dark:text-gold-400 font-bold text-base"
+                >2,500 Bottles</span
+              >
+            </div>
+            <input
+              type="range"
+              id="volumeSlider"
+              min="500"
+              max="25000"
+              step="500"
+              value="2500"
+              class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-gold-500"
+            />
+            <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+              <span>500 min.</span>
+              <span>10,000</span>
+              <span>25,000+</span>
+            </div>
+          </div>
+
+          <div
+            class="p-6 rounded-2xl bg-slate-50 dark:bg-obsidian border border-slate-200 dark:border-slate-800 text-center"
+          >
+            <span
+              class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-widest block mb-1"
+              >Recommended Batch Configuration</span
+            >
+            <h4
+              id="calcRecommendation"
+              class="font-serif text-lg font-bold text-slate-900 dark:text-white mb-2"
+            >
+              Tier 2 Hospitality Batch • 2,500 Units / Month
+            </h4>
+            <p
+              class="text-xs text-slate-600 dark:text-slate-400 mb-4 max-w-lg mx-auto"
+            >
+              Eligible for custom plate engraving, label customization, and
+              direct scheduled pallet drops to your Roorkee, Haridwar, or NCR
+              facility.
+            </p>
+            <button
+              type="button"
+              onclick="transferToForm()"
+              class="bg-gold-500 hover:bg-gold-400 text-obsidian font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-full transition shadow-md"
+            >
+              Apply This Spec to Quote Form ↓
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Lead Capture Section -->
+    <section
+      id="contact"
+      class="py-24 bg-white dark:bg-midnight relative overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <!-- Contact Left -->
+          <div class="lg:col-span-5">
+            <span
+              class="text-xs font-bold text-gold-600 dark:text-gold-400 tracking-widest uppercase block mb-3"
+              >06 | Connect Directly</span
+            >
+            <h2
+              class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-6"
+            >
+              Let's Create Your Signature Bottle
+            </h2>
+            <p
+              class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-8"
+            >
+              Speak directly with our leadership team. We provide sample label
+              mockups within 24–48 hours for serious procurement inquiries
+              across Uttarakhand and Northern India.
+            </p>
+
+            <div class="space-y-6">
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center flex-shrink-0 font-bold"
+                >
+                  📞
+                </div>
+                <div>
+                  <span
+                    class="text-xs text-slate-500 dark:text-slate-400 block uppercase tracking-wider"
+                    >Direct Telephone</span
+                  >
+                  <a
+                    href="tel:+916395419708"
+                    class="font-bold text-base text-slate-900 dark:text-white hover:text-gold-500 dark:hover:text-gold-400 transition"
+                  >
+                    +91 63954 19708
+                  </a>
+                  <span
+                    class="text-[11px] text-slate-500 dark:text-slate-400 block"
+                    >Available 9:00 AM – 8:00 PM IST</span
+                  >
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center flex-shrink-0 font-bold"
+                >
+                  💬
+                </div>
+                <div>
+                  <span
+                    class="text-xs text-slate-500 dark:text-slate-400 block uppercase tracking-wider"
+                    >WhatsApp Business</span
+                  >
+                  <a
+                    href="https://wa.me/916395419708?text=Hello%20New%20Luck%20Enterprises,%20I%20would%20like%20to%20inquire%20about%20customized%20packaged%20drinking%20water."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-bold text-base text-emerald-600 dark:text-emerald-400 hover:underline"
+                  >
+                    Chat on WhatsApp (+91 63954 19708)
+                  </a>
+                  <span
+                    class="text-[11px] text-slate-500 dark:text-slate-400 block"
+                    >Instant response for digital mockups</span
+                  >
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center flex-shrink-0 font-bold"
+                >
+                  📍
+                </div>
+                <div>
+                  <span
+                    class="text-xs text-slate-500 dark:text-slate-400 block uppercase tracking-wider"
+                    >Manufacturing &amp; Office</span
+                  >
+                  <p
+                    class="text-sm font-semibold text-slate-900 dark:text-white"
+                  >
+                    536, Awas Vikas Colony, Roorkee,<br />
+                    District Haridwar, Uttarakhand – 247667
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center flex-shrink-0 font-bold"
+                >
+                  👤
+                </div>
+                <div>
+                  <span
+                    class="text-xs text-slate-500 dark:text-slate-400 block uppercase tracking-wider"
+                    >Leadership</span
+                  >
+                  <p
+                    class="text-sm font-semibold text-slate-900 dark:text-white"
+                  >
+                    Udit Ranjan
+                    <span
+                      class="text-xs font-normal text-slate-500 dark:text-slate-400"
+                      >(Proprietor)</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Right: Form -->
+          <div class="lg:col-span-7">
+            <div
+              class="bg-slate-50 dark:bg-surfaceDark p-8 sm:p-10 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-xl"
+            >
+              <h3
+                class="font-serif text-2xl font-bold text-slate-900 dark:text-white mb-2"
+              >
+                Request Formal Quotation
+              </h3>
+              <p class="text-xs text-slate-600 dark:text-slate-400 mb-8">
+                Fill out your hospitality specifications below. Our bottling
+                specialists will respond immediately.
+              </p>
+
+              <form id="inquiryForm" class="space-y-6">
+                <!-- Web3Forms Access Key -->
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="927e9b7d-4952-4a28-877a-536de2c0e033"
+                />
+
+                <!-- Subject Customization -->
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="New B2B Lead Inquiry - New Luck Enterprises"
+                />
+
+                <!-- Anti-Spam Honeypot -->
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  class="hidden"
+                  style="display: none"
+                />
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2"
+                      >Your Name *</label
+                    >
+                    <input
+                      type="text"
+                      name="Client Name"
+                      id="contactName"
+                      required
+                      placeholder="e.g., Rajesh Sharma"
+                      class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500 text-slate-900 dark:text-white"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2"
+                      >Business / Hotel Name *</label
+                    >
+                    <input
+                      type="text"
+                      name="Business Name"
+                      id="businessName"
+                      required
+                      placeholder="e.g., Grand Heritage Resort"
+                      class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500 text-slate-900 dark:text-white"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2"
+                      >Phone Number (+91) *</label
+                    >
+                    <input
+                      type="tel"
+                      name="Phone Number"
+                      id="contactPhone"
+                      required
+                      placeholder="+91 XXXXX XXXXX"
+                      class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500 text-slate-900 dark:text-white"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      name="Email Address"
+                      id="contactEmail"
+                      placeholder="procurement@hotel.com"
+                      class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500 text-slate-900 dark:text-white"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div>
+                    <label
+                      class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2"
+                      >Bottle Size</label
+                    >
+                    <select
+                      name="Bottle Size"
+                      id="formSize"
+                      class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-3 py-3 text-xs focus:outline-none focus:border-gold-500 text-slate-900 dark:text-white"
+                    >
+                      <option value="1000ml">1000 ml</option>
+                      <option value="500ml" selected>500 ml</option>
+                      <option value="250ml">250 ml</option>
+                      <option value="Mixed">Mixed Sizes</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label
+                      class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2"
+                      >Shape Profile</label
+                    >
+                    <select
+                      name="Shape Profile"
+                      id="formShape"
+                      class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-3 py-3 text-xs focus:outline-none focus:border-gold-500 text-slate-900 dark:text-white"
+                    >
+                      <option value="Square">Square (Luxury)</option>
+                      <option value="Round">Round (Classic)</option>
+                      <option value="Both">Both Formats</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label
+                      class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2"
+                      >Expected Quantity</label
+                    >
+                    <select
+                      name="Expected Quantity"
+                      id="formQuantity"
+                      class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-3 py-3 text-xs focus:outline-none focus:border-gold-500 text-slate-900 dark:text-white"
+                    >
+                      <option value="500-2000">500 – 2,000 / mo</option>
+                      <option value="2000-5000" selected>
+                        2,000 – 5,000 / mo
+                      </option>
+                      <option value="5000-15000">5,000 – 15,000 / mo</option>
+                      <option value="15000+">15,000+ / Event Batch</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2"
+                    >Specific Requirements / Brand Notes</label
+                  >
+                  <textarea
+                    name="Brand & Order Notes"
+                    id="formNotes"
+                    rows="3"
+                    placeholder="Tell us about your brand color preferences, delivery location, or upcoming event timeline..."
+                    class="w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500 text-slate-900 dark:text-white"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  id="submitBtn"
+                  class="w-full bg-gradient-to-r from-gold-500 via-gold-600 to-amber-600 hover:from-gold-400 hover:to-gold-500 text-obsidian font-bold text-sm tracking-widest uppercase py-4 rounded-xl shadow-lg shadow-gold-500/20 transition-all flex items-center justify-center gap-2"
+                >
+                  <span>Submit Quotation Inquiry</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div
+      id="successModal"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm hidden"
+    >
+      <div
+        class="bg-white dark:bg-surfaceDark border border-gold-500/40 max-w-md w-full mx-4 rounded-3xl p-8 text-center shadow-2xl"
+      >
+        <div
+          class="w-16 h-16 rounded-full bg-gold-500/20 text-gold-500 flex items-center justify-center mx-auto text-2xl mb-4 font-bold"
+        >
+          ✓
+        </div>
+        <h3
+          class="font-serif text-2xl font-bold text-slate-900 dark:text-white mb-2"
+        >
+          Inquiry Received!
+        </h3>
+        <p
+          id="modalMessage"
+          class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6"
+        >
+          Thank you. We have received your request. Udit Ranjan from New Luck
+          Enterprises will contact you shortly.
+        </p>
+        <button
+          type="button"
+          onclick="closeModal()"
+          class="bg-gold-500 text-obsidian font-bold text-xs uppercase tracking-wider px-8 py-3 rounded-full hover:bg-gold-400 transition"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="bg-slate-100 dark:bg-black border-t border-slate-200 dark:border-slate-800/80 py-16"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+          <div class="md:col-span-2">
+            <div class="flex items-center space-x-3 mb-4">
+              <div
+                class="w-9 h-9 rounded-lg bg-gold-500 flex items-center justify-center font-serif text-obsidian font-bold text-lg"
+              >
+                NLE
+              </div>
+              <span
+                class="font-serif text-lg font-bold text-slate-900 dark:text-white"
+                >NEW LUCK ENTERPRISES</span
+              >
+            </div>
+            <p
+              class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-sm leading-relaxed mb-4"
+            >
+              Customized packaged drinking water solutions engineered for
+              hospitality, wellness, and luxury event branding throughout
+              Uttarakhand and North India.
+            </p>
+            <p class="text-xs text-slate-500 dark:text-slate-500">
+              Established: 25 December 2025 • Registered Office: Roorkee
+            </p>
+          </div>
+
+          <div>
+            <h4
+              class="font-serif font-bold text-xs uppercase tracking-widest text-slate-900 dark:text-gold-400 mb-4"
+            >
+              Quick Navigation
+            </h4>
+            <ul class="space-y-2 text-xs text-slate-600 dark:text-slate-400">
+              <li>
+                <a href="#about" class="hover:text-gold-500 transition"
+                  >Company Profile</a
+                >
+              </li>
+              <li>
+                <a href="#specifications" class="hover:text-gold-500 transition"
+                  >Bottle Specifications</a
+                >
+              </li>
+              <li>
+                <a href="#portfolio" class="hover:text-gold-500 transition"
+                  >Sample Brand Showcase</a
+                >
+              </li>
+              <li>
+                <a href="#sectors" class="hover:text-gold-500 transition"
+                  >Target Sectors</a
+                >
+              </li>
+              <li>
+                <a href="#calculator" class="hover:text-gold-500 transition"
+                  >Cost &amp; Quantity Estimator</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="font-serif font-bold text-xs uppercase tracking-widest text-slate-900 dark:text-gold-400 mb-4"
+            >
+              Direct Contact
+            </h4>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mb-2">
+              <strong>Proprietor:</strong> Udit Ranjan
+            </p>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mb-2">
+              <strong>Phone:</strong>
+              <a
+                href="tel:+916395419708"
+                class="text-gold-600 dark:text-gold-400 hover:underline"
+                >+91 63954 19708</a
+              >
+            </p>
+            <p
+              class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed"
+            >
+              536, Awas Vikas Colony, Roorkee, District Haridwar, Uttarakhand –
+              247667
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 border-t border-slate-200 dark:border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-500"
+        >
+          <p>© 2025–2026 New Luck Enterprises. All rights reserved.</p>
+          <p class="mt-2 sm:mt-0">
+            Pure Jal • Custom Water • Custom Branding • Professional Packaging
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // 1. Theme Toggle
+      const htmlElement = document.documentElement;
+      const themeToggleBtn = document.getElementById("themeToggleBtn");
+      const sunIcon = document.getElementById("sunIcon");
+      const moonIcon = document.getElementById("moonIcon");
+
+      function updateIcons(isDark) {
+        if (isDark) {
+          sunIcon.classList.remove("hidden");
+          moonIcon.classList.add("hidden");
+        } else {
+          sunIcon.classList.add("hidden");
+          moonIcon.classList.remove("hidden");
+        }
+      }
+
+      updateIcons(htmlElement.classList.contains("dark"));
+
+      themeToggleBtn.addEventListener("click", () => {
+        const isDark = htmlElement.classList.toggle("dark");
+        updateIcons(isDark);
+      });
+
+      // 2. Portfolio Category Filtering
+      const filterBtns = document.querySelectorAll(".portfolio-filter-btn");
+      const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          filterBtns.forEach((b) => {
+            b.classList.remove("bg-gold-500", "text-obsidian");
+            b.classList.add(
+              "bg-slate-100",
+              "dark:bg-slate-800",
+              "text-slate-700",
+              "dark:text-slate-300",
+            );
+          });
+          btn.classList.add("bg-gold-500", "text-obsidian");
+          btn.classList.remove(
+            "bg-slate-100",
+            "dark:bg-slate-800",
+            "text-slate-700",
+            "dark:text-slate-300",
+          );
+
+          const cat = btn.getAttribute("data-category");
+          portfolioItems.forEach((item) => {
+            if (cat === "all" || item.classList.contains(cat)) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+
+      // 3. Calculator Logic
+      const slider = document.getElementById("volumeSlider");
+      const display = document.getElementById("sliderValueDisplay");
+      const recText = document.getElementById("calcRecommendation");
+      const calcSize = document.getElementById("calcSize");
+
+      function updateCalculator() {
+        const val = parseInt(slider.value).toLocaleString("en-IN");
+        display.textContent = `${val} Bottles`;
+
+        let tier = "Standard";
+        if (slider.value > 10000) tier = "Enterprise Bulk";
+        else if (slider.value > 4000) tier = "Tier 1 Hospitality";
+
+        recText.textContent = `${tier} Batch • ${val} Bottles / Month (${calcSize.value}ml)`;
+      }
+
+      slider.addEventListener("input", updateCalculator);
+      calcSize.addEventListener("change", updateCalculator);
+
+      function transferToForm() {
+        document.getElementById("formSize").value =
+          calcSize.value === "mixed" ? "Mixed" : calcSize.value + "ml";
+        const val = parseInt(slider.value);
+        const formQty = document.getElementById("formQuantity");
+        if (val <= 2000) formQty.value = "500-2000";
+        else if (val <= 5000) formQty.value = "2000-5000";
+        else if (val <= 15000) formQty.value = "5000-15000";
+        else formQty.value = "15000+";
+
+        document
+          .getElementById("contact")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+
+      function closeModal() {
+        document.getElementById("successModal").classList.add("hidden");
+      }
+
+      // 4. Form Submission to Web3Forms (Single Unified Handler)
+      const form = document.getElementById("inquiryForm");
+      const submitBtn = document.getElementById("submitBtn");
+
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const originalBtnHtml = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `
+          <svg class="animate-spin h-4 w-4 text-obsidian" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+          </svg>
+          <span>Sending Inquiry...</span>
+        `;
+
+        const clientName = document.getElementById("contactName").value;
+        const businessName = document.getElementById("businessName").value;
+        const phone = document.getElementById("contactPhone").value;
+        const size = document.getElementById("formSize").value;
+        const shape = document.getElementById("formShape").value;
+        const qty = document.getElementById("formQuantity").value;
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData,
+          });
+
+          const result = await response.json();
+
+          if (result.success) {
+            const modalMsg = document.getElementById("modalMessage");
+            modalMsg.textContent = `Thank you ${clientName} (${businessName}). Your inquiry for ${qty} bottles (${size}, ${shape} shape) has been prioritized. Udit Ranjan from New Luck Enterprises will contact you at ${phone}.`;
+
+            document.getElementById("successModal").classList.remove("hidden");
+            form.reset();
+          } else {
+            alert(
+              "Submission error: " +
+                (result.message || "Please check your inputs and try again."),
+            );
+          }
+        } catch (error) {
+          alert(
+            "Network error. Please try reaching us directly via phone or WhatsApp at +91 63954 19708.",
+          );
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHtml;
+        }
+      });
+    </script>
+  </body>
+</html>
